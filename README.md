@@ -18,7 +18,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 9. Istallare sass da terminale VSC digitando: npm add -D sass---verificare la presenza di sass su package.json
 10. Resettare AppVue cancellando tutto e inserendo script (con export default {}) template e style (con lang="scss")
 11. Cancellare style.css e creare una cartella style dentro src
-12. Dentro la cartella style creare file general.scss
+12. Dentro la cartella style creare file general.scss (vi importerai le variables e mixins per formattare gli stili globali)
 13. Dentro la cartella style creare la cartella partials
 14. Dentro la cartella partials creare file _variables.scss e _mixin.scss
 15. Su main.js cambiare il link del secondo import in './style/general.scss' per collegarlo al nuovo file
@@ -33,5 +33,9 @@ ESERCIZIO INIZIO
 20. su ognuna imposto  
     script(export default {data() {return{}}}) template e style(scoped lang="scss")
 21. Su AppVue importo tutti e 3 digitando es. <AppHeader /> in template e cliccando sul suggerimento. Comparirà un import... all'interno di script-->inserisci components: {AppHeader} dentro export default
-22.
+22. crea le prime variabili in -variables.scss usando $, definisci tutte le variabili di colore, font, e altre costanti riutilizzabili.
+23. crea mixinSCSS per riutilizzare pezzi di codice CSS.
+24. Ogni volta che usi variables e mixin bisogna importarle con @use + percorso o @include
+
+
 

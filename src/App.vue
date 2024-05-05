@@ -2,13 +2,15 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import IconsList from './components/IconsList.vue'
 
 
 export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    IconsList
     
   }
 }
@@ -18,7 +20,10 @@ export default {
   
 
   <AppHeader />
+  <IconsList />
   <AppMain />
+
+ 
   <AppFooter />
 </template>
 
